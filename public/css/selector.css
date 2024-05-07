@@ -1,0 +1,119 @@
+:root {
+  background: rgb(231, 242, 240);
+}
+html {
+  max-width: 720px;
+
+  background: rgb(212, 209, 209);
+}
+
+body {
+  background: #fff;
+}
+* {
+  color: black;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: whitesmoke;
+}
+
+#user,.user {
+  color: blue;
+}
+
+h1, h2, button {
+  color: rgb(216, 70, 187);
+}
+
+div > p {
+  color: peru;
+}
+
+footer > p.user {
+  color: green;
+}
+
+footer em {
+  color: black;
+} 
+
+.p-top {
+  background: rgb(251, 251, 65);
+}
+
+h1 + p {
+  background: rgb(50, 43, 43);
+}
+
+h1 ~ p {
+  background: rgb(94, 94, 200);
+}
+
+.card-dark {
+  background: rgb(247, 243, 243);
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:nth-child(3){
+  color: red;
+}
+
+.item:nth-child(3n+1){
+  color: green;
+}
+
+.input-dark {
+  background: greenyellow;
+}
+
+.input-dark[required] {
+  background: rgb(115, 115, 233);
+}
+
+.input-dark[type="number"] {
+  background: rgb(90, 241, 158);
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+a[rel~="external"] {
+  color: rgb(231, 27, 78);
+}
+
+button[class|="btn"] {
+  background: #e1aaaa;
+}
+
+a[class^="btn"] {
+  background: #58e598;
+}
+
+a[class*="btn-denger"] {
+  background: #ec48ce;
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: greenyellow;
+}
+
+#test:target {
+  color: red;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background: rgb(83, 224, 163);
+}
