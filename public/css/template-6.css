@@ -1,0 +1,293 @@
+:root {
+    --space-m: 12px;
+    --space-xm: 16px;
+    --space-l: 24px;
+    --space-b:36px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+
+    --color-bordeer: #DEE2E6;
+    --color-primary: rgb(18, 212, 193);
+    --color-title: #212529;
+    --color-text: #343A40;
+
+    --weight-title: 500;
+    --weight-text: 400;
+
+}
+
+
+/* ============= */
+.page {
+    background: #FFFFFF;
+    padding: 0 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.page-content {
+    max-width: 1000px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+    
+}
+/* ============== */
+
+.header {
+    padding: var( --space-l) 0;
+    border-bottom: 1px solid var( --color-bordeer);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 17px;
+    color: #FFFFFF;
+
+    width: 24px;
+    height: 24px;
+    border-radius: calc(12px/2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+}
+
+
+.nav {
+ display: flex;
+}
+
+.nav_inline {
+ gap: var( --space-l);
+}
+
+.nav_vertical {
+    gap: var( --space-xm);
+    flex-direction: column;
+}
+
+.nav_link {
+ color:  var(--color-text);
+ font-size: var(--size-d);
+ text-decoration: none;
+
+ line-height: 100%;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.footer {
+    padding: var( --space-l) 0;
+    border-top: 1px solid var( --color-bordeer);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+
+    display: block;
+    margin-top: var( --space-l);
+
+}
+
+.footer_title {
+    font-size: var(--size-l);
+    font-weight: var(--weight-title);
+    color: var(--color-title);
+    display: block;
+    margin-bottom: var(--space-l);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info_title {
+    font-size: 54px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.info_description {
+    font-size: 24px;
+    font-weight: 400;
+    color: #212529;
+}
+
+.form {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0.15);
+    
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px;
+}
+
+.form_info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #343A40;
+    line-height: 120%;
+}
+
+.form_button {
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+
+    transition: opacity 0.7s;
+
+}
+
+.form_button:hover {
+    opacity: 0.7s;
+}
+
+.form_button:active {
+    opacity: 0.3s;
+}
+
+.form_input_list {
+    display: grid;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.form_input {
+    font-size: 16px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    padding: 12px;
+
+}
+
+.form_input::placeholder {
+    color: #212529;
+}
+
+.form_checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.form_checkbox > input {
+    border: 1px solid #60758a;
+    border-radius: 4px;
+}
+
+.updates {
+    padding: 24px;
+}
+
+.updates_title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #212529;
+    margin: 24px;
+}
+
+.updates_list {
+    padding: 12px;
+}
+
+.list_nickname {
+    font-size: 14px;
+    color: #60758a;
+    padding: 12px;
+
+}
+
+.list_description {
+    font-size: 16px;
+    color: #343A40;
+    margin-bottom: 12px;
+
+}
+
+.divider {
+    margin: 0;
+    height: 1px;
+    background:  #DEE2E6;
+}
+
+.expirience_title {
+    font-size: 24px;
+    text-align: center;
+    color: #212529;
+}
+
+.expirience_badge {
+    font-size: 16px;
+    color: #11161c;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #ff7347;
+    inline-size: max-content;
+    margin-inline-start: 90%;
+    
+}
+
+.expirience_list {
+    display: flex;
+    padding: 24px;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+
+    padding: 22px;
+    gap: 12px;
+    margin: 24px;
+
+    width: 100%;
+    background: #212529;
+
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 500;
+    color: #DEE2E6;
+}
+
+.details {
+    font-size: 16px;
+    font-weight: 400;
+    color: #DEE2E6;
+
+}
